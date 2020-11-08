@@ -1,0 +1,48 @@
+
+*.plist
+.DS_Store
+__pycache__/login.cpython-37.pyc
+auto
+Job Scraper.app/Contents/document.wflow
+Job Scraper.app/Contents/MacOS/Application Stub
+Job Scraper.app/Contents/Resources/ar.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/AutomatorApplet.icns
+Job Scraper.app/Contents/Resources/ca.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/cs.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/da.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/de.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/el.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/en.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/en_AU.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/en_GB.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/es.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/es_419.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/fi.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/fr.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/fr_CA.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/he.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/hi.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/hr.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/hu.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/id.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/it.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/ja.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/ko.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/ms.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/nl.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/no.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/pl.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/pt.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/pt_PT.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/ro.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/ru.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/sk.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/sv.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/th.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/tr.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/uk.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/vi.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/zh_CN.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/zh_HK.lproj/InfoPlist.strings
+Job Scraper.app/Contents/Resources/zh_TW.lproj/InfoPlist.strings
+login.py
