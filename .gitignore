@@ -3,6 +3,7 @@
 .DS_Store
 __pycache__/login.cpython-37.pyc
 auto
+.gitattributes
 Job Scraper.app/Contents/document.wflow
 Job Scraper.app/Contents/MacOS/Application Stub
 Job Scraper.app/Contents/Resources/ar.lproj/InfoPlist.strings
