@@ -30,10 +30,9 @@ distance_val = results.find_all('span', id='distance-value')
 closing_dates = results.find_all('span', id='closing-date-value')
 wage_vals = results.find_all('ul', attrs={'class': 'list sfa-no-margins vacancy-details-list'})
 # Reads in the list of previously found jobs, and splits them on the comma to create a list of job titles.
-job_file = open('/Users/nathanprice/Dropbox/Python/Job-scraping/jobs.txt', "r")
+job_file = open('jobs.txt', "r")
 old_jobs = job_file.read().split(',')
 job_file.close()
-
 # List to track whether or not there are new job postings. We later call len() of this list to see
 new_jobs = []
 
@@ -52,13 +51,10 @@ for job, distance, date, wage in zip(job_elems, distance_val, closing_dates, wag
     job_title = job[-1][1:-4]
     # Second to last entry is the url to append to create the direct link to the job posting
     job_url = 'https://www.findapprenticeship.service.gov.uk' + job[-2]
-
     # regex to find the digits in the distance string as two seperate integers
     distance = re.findall(r'\d+', str (distance))
     # join them together with a period to give 4.3 / 6.7
     distance = ".".join(distance)
-    print (date)
-    exit()
     # The first section of data is always the same HTML code + a datetime format.
     # So we can just give the index position of the end of that block.
     date = str(date)[63:-7]
@@ -85,7 +81,7 @@ for job, distance, date, wage in zip(job_elems, distance_val, closing_dates, wag
         # adds any new job found to the new_jobs list
         new_jobs.append(job_title)
     # writes all job titles to the job.txt file
-    updated_file = open('/Users/nathanprice/Dropbox/Python/Job-scraping/jobs.txt', 'a')
+    updated_file = open('jobs.txt', 'a')
     updated_file.write(f'{job_title},')
 
 # finishes the html email code
@@ -94,7 +90,6 @@ html += '</body></html>'
 # checks to see if there are actually any new jobs, if not will exit the script
 if len (new_jobs) == 0:
     exit()
-
 
 # Creates and sends the email using the scraped information
 message = MIMEMultipart('alternative')
@@ -111,6 +106,10 @@ message.attach(part2)
 port = 465
 context = ssl.create_default_context()
 
-with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-    server.login(user, password)
-    server.sendmail(user, address, message.as_string())
+
+print (plain)
+
+
+# with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
+#     server.login(user, password)
+#     server.sendmail(user, address, message.as_string())
